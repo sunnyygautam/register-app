@@ -5,6 +5,7 @@ pipeline {
         maven 'maven3'
     }
     environment {
+	    DOCKER_HOST = 'tcp://localhost:2375'
 	    APP_NAME = "register-app-pipeline"
             RELEASE = "1.0.0"
             DOCKER_USER = "venkappakk"
